@@ -1,0 +1,2 @@
+# Beating-the-House-Identifying-Inefficiencies-in-Sports-Betting-Markets
+Inefficient markets allow investors to consistently outperform the market. In order to demonstrate that inefficiencies exist in sports betting markets, we created a betting algorithm that generates above market returns for the NFL, NBA, NCAAF, and NCAAB betting markets. In our betting strategy, we examined bets that involve picking a team to win, and created a probability model to find positive expected value situations.
