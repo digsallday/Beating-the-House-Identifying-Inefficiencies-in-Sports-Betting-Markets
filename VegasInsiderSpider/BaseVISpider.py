@@ -5,7 +5,7 @@ from VIGlobals import VIGlobals
 class BaseVISpider:
     """
     BaseVISpider class that contains base attributes and methods shared by the WeeklyVISpider and DailyVISpider
-    classes, that scrape the vegasinsider.com website in order to acquire sports betting data.
+    classes, that scrape the vegasinsider.com website in order to acquire sports betting data
     """
     def __init__(self, target_csv, webdriver_path, branch_url='', read_csv=False, time_threshold=1, verbose=True):
         """
