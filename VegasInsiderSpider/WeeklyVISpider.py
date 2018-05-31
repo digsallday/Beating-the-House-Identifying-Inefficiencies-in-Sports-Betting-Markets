@@ -7,7 +7,7 @@ from BaseVISpider import BaseVISpider
 
 class WeeklyVISpider(BaseVISpider):
     """
-    WeeklyVISpider class that inherit base attributes and methods from the BaseVISpider class and that scrapes
+    WeeklyVISpider class that inherits base attributes and methods from the BaseVISpider class and that scrapes
     the vegasinsider.com website in order to acquire betting data for sports which follow a weekly schedule.
     """
     def __init__(self, sport_name, weeks_count, team_abbr, target_csv, webdriver_path, branch_url='', read_csv=False,
