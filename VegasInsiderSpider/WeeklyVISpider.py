@@ -36,7 +36,7 @@ class WeeklyVISpider(BaseVISpider):
         """
         Given the year or season which requires scraping and the forbidden weeks, deploys a spider that
         visits the vegasinsider.com website to acquire the betting data for the specified sport for the
-        specified year and store all relevant data to memory
+        specified year and stores all relevant data to memory
         """
         # specify the different csv file names
         moneylines_csv_filename = \
@@ -106,7 +106,7 @@ class WeeklyVISpider(BaseVISpider):
                         away_spreads, home_spreads = list([]), list([])
                         final_data_upper_row, final_data_lower_row = list([]), list([])
 
-                        # create a new Chromedriver
+                        # create a new auxiliary Chromedriver
                         game_driver = webdriver.Chrome(self.get_webdriver_path())
                         game_driver.get(url)  # visit the website
 
