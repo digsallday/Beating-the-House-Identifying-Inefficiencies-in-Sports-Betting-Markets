@@ -5,7 +5,9 @@ class NBAGlobals:
 
     SPORT_NAME = "NBA"  # sport name
 
-    VI_BRANCH_URL = 'nba/scoreboard/scores.cfm'  # branch url for nba
+    VI_BRANCH_URL = "nba/scoreboard/scores.cfm"  # branch url for nba
+
+    KS_BRANCH_URL = "nba/query"  # killersports.com branch url for nba
 
     # dictionary mapping nba team names to their respective abbreviations
     TEAM_ABBR = \

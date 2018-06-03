@@ -5,7 +5,9 @@ class NCAABGlobals:
 
     SPORT_NAME = "NCAAB"  # sport name
 
-    VI_BRANCH_URL = 'college-basketball/scoreboard/scores.cfm'  # branch url for ncaab
+    VI_BRANCH_URL = "college-basketball/scoreboard/scores.cfm"  # branch url for ncaab
+
+    KS_BRANCH_URL = "ncaabb/query"  # killersports.com branch url for ncaab
 
     # dictionary mapping ncaab team names to their respective abbreviations
     TEAM_ABBR = \

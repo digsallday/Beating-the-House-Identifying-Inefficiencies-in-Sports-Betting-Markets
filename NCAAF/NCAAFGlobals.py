@@ -7,7 +7,9 @@ class NCAAFGlobals:
 
     WEEKS_COUNT = 19  # number of weeks in a season (includes postseason)
 
-    VI_BRANCH_URL = 'college-football/scoreboard/scores.cfm'  # branch url for nfl
+    VI_BRANCH_URL = 'college-football/scoreboard/scores.cfm'  # branch url for ncaaf
+
+    KS_BRANCH_URL = "ncaafb/query"  # killersports.com branch url for ncaaf
 
     # dictionary mapping ncaaf team names to their respective abbreviations
     TEAM_ABBR = \

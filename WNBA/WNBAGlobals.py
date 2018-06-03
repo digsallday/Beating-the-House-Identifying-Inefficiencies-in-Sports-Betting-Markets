@@ -5,7 +5,9 @@ class WNBAGlobals:
 
     SPORT_NAME = "WNBA"  # sport name
 
-    VI_BRANCH_URL = 'wnba/scoreboard/scores.cfm'  # branch url for wnba
+    VI_BRANCH_URL = "wnba/scoreboard/scores.cfm"  # branch url for wnba
+
+    KS_BRANCH_URL = "wnba/query"  # killersports.com branch url for wnba
 
     # dictionary mapping wnba team names to their respective abbreviations
     TEAM_ABBR = \

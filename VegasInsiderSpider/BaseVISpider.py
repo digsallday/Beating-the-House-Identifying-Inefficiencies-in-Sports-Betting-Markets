@@ -22,7 +22,8 @@ class BaseVISpider:
 
         # if the read_csv option is True, read the csv stored in the target_csv path
         if self.read_csv: self.csv_matrix = FileIO.read_csv(self.target_csv)
-        else: self.csv_matrix = list([list(VIGlobals.OVERALL_CSV_HEADER), list()])  # otherwise initialize a new csv matrix
+        # otherwise initialize a new csv matrix
+        else: self.csv_matrix = list([list(VIGlobals.OVERALL_CSV_HEADER), list()])
 
     def extract_moneyline(self, ml_table_row, team1_len, team2_len):
         """
@@ -623,49 +624,49 @@ class BaseVISpider:
 
     def get_target_csv(self):
         """
-        Return the target csv
+        Returns the target csv
         """
         return self.target_csv  # return the target csv
 
     def get_webdriver_path(self):
         """
-        Return the webdriver path
+        Returns the webdriver path
         """
         return self.webdriver_path  # return the webdriver path
 
     def get_base_url(self):
         """
-        Return the base url
+        Returns the base url
         """
         return self.base_url  # return the base url
 
     def get_branch_url(self):
         """
-        Return the branch url
+        Returns the branch url
         """
         return self.branch_url  # return the branch url
 
     def get_read_csv(self):
         """
-        Return the read csv attribute
+        Returns the read csv attribute
         """
         return self.read_csv  # return the read csv attribute
 
     def get_time_threshold(self):
         """
-        Return the time threshold attribute
+        Returns the time threshold attribute
         """
         return self.time_threshold  # return the time threshold attribute
 
     def get_verbose(self):
         """
-        Return the verbose option
+        Returns the verbose option
         """
         return self.verbose  # return the verbose option
 
     def get_csv_matrix(self):
         """
-        Return the csv matrix
+        Returns the csv matrix
         """
         return self.csv_matrix  # return the csv matrix
 

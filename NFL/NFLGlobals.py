@@ -7,7 +7,9 @@ class NFLGlobals:
 
     WEEKS_COUNT = 22  # number of weeks in a season (includes postseason)
 
-    VI_BRANCH_URL = 'nfl/scoreboard/scores.cfm'  # branch url for nfl
+    VI_BRANCH_URL = "nfl/scoreboard/scores.cfm"  # vegasinsider.com branch url for nfl
+
+    KS_BRANCH_URL = "nfl/query"  # killersports.com branch url for nfl
 
     # dictionary mapping nfl team names to their respective abbreviations
     TEAM_ABBR = \
