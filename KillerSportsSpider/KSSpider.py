@@ -26,7 +26,7 @@ class KSSpider:
         # if the read_csv option is True, read the csv stored in the target_csv path
         if self.read_csv: self.csv_matrix = FileIO.read_csv(self.get_target_csv())
         # otherwise initialize a new csv matrix
-        else: self.csv_matrix = list([KSGlobals.FINAL_KS_CSV_HEADER, list()])
+        else: self.csv_matrix = list([KSGlobals.KS_CSV_HEADER, list()])
 
         self.query_timeout = query_timeout
         self.ntrials = ntrials

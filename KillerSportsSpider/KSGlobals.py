@@ -23,11 +23,11 @@ class KSGlobals:
             'VENETIAN'
         ])
 
-    # prefix for final ks csv filename
-    FINAL_KS_CSV_PREFIX = "KS Data"
+    # suffix for the killersports csv filename
+    KS_CSV_SUFFIX = "KS Data"
 
-    # header for final killersports csv
-    FINAL_KS_CSV_HEADER = \
+    # header for the killersports csv
+    KS_CSV_HEADER = \
         list([
             'Date',
             'Teams',

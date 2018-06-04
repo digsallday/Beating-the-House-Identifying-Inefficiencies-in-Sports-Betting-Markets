@@ -12,7 +12,7 @@ START_GAME_INDEX = 0  # specify the starting game index
 DATA_MATRIX = FileIO.read_csv(" ".join([WNBAGlobals.SPORT_NAME, VIGlobals.SPREADS_CSV_SUFFIX, "(Aggregate).csv"]))
 
 # initialize the target csv
-TARGET_CSV = " ".join([WNBAGlobals.SPORT_NAME, KSGlobals.FINAL_KS_CSV_PREFIX, "(Aggregate).csv"])
+TARGET_CSV = " ".join([WNBAGlobals.SPORT_NAME, KSGlobals.KS_CSV_SUFFIX, "(Aggregate).csv"])
 
 wnba_spider = \
     KSSpider(
