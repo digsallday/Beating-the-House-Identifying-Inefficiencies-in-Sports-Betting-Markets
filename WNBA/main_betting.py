@@ -22,5 +22,12 @@ wnba_betting_machine = \
         verbose=True
     )  # initialize the wnba betting machine
 
+num_arbitrage = wnba_betting_machine.compute_arbitrage()  # compute number of games with arbitrage
+num_games = BettingMachine.compute_num_games(wnba_betting_machine.get_ev_csv())  # compute total number of games
+
 # run the betting algorithm
 wnba_betting_machine.run(EPSILON, EV_THRESHOLD)
+
+print("Number of Arbitrage Games: " + str(num_arbitrage) + "\n")  # display the arbitrage stats
+print("Number of Total Games: " + str(num_games) + "\n")
+print("Percentage of Arbitrage Games (%): " + str(num_arbitrage / float(num_games) * 100) + "\n")

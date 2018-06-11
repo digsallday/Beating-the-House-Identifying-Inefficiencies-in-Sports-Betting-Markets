@@ -161,6 +161,34 @@ class BettingMachine:
 
         FileIO.write_csv(results_csv_filename, results_csv)  # write the results csv to memory
 
+    def compute_arbitrage(self):
+        """
+        Computes and returns the number of games where arbitrage is present
+        """
+        num_arbitrage = 0  # initialize the number of game with arbitrage to zero
+
+        ev_csv = self.get_ev_csv()  # get the ev csv
+
+        for row_idx in range(2, len(ev_csv), 3):  # for every game
+            fav_row = list(ev_csv[row_idx])  # get the favorite and underdog rows
+            dog_row = list(ev_csv[row_idx + 1])
+
+            fav_moneyline = float(fav_row[6])  # get the favorite and underdog moneylines
+            dog_moneyline = float(dog_row[6])
+
+            # check if arbitrage exists and update counter accordingly
+            num_arbitrage += int(abs(dog_moneyline) > abs(fav_moneyline))
+
+        return num_arbitrage  # return the number of games with arbitrage
+
+    @staticmethod
+    def compute_num_games(data):
+        """
+        Given a data set represented as a list of lists, computes and returns the number
+        of games in the data set
+        """
+        return int((len(data) - 2) / 3)  # return the number of games
+
     def display(self, message):
         """
         Given a message string, prints the message if the verbose option is turned on
