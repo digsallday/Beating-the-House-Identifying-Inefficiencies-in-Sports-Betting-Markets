@@ -1,1 +1,2 @@
+from BettingMachine.BMGlobals import BMGlobals
 from BettingMachine.BettingMachine import BettingMachine
