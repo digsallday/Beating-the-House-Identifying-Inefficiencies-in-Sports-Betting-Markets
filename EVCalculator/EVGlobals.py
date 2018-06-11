@@ -1,6 +1,6 @@
 class EVGlobals:
     """
-    Class containing global variables for the EVGlobals package
+    Class containing global variables for the EVCalculator package
     """
 
     # header for the ev csv

@@ -1,6 +1,6 @@
 class WPGlobals:
     """
-    Class containing global variables for the WPGlobals package
+    Class containing global variables for the WinPercentageCalculator package
     """
 
     # prefix for the weight function strings

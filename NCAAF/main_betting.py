@@ -1,5 +1,5 @@
-from EVCalculator import EVCalculator
-from NCAAB.NCAABGlobals import NCAABGlobals
+from BettingMachine import BettingMachine
+from NCAAF.NCAAFGlobals import NCAAFGlobals
 from WinPercentageCalculator import WPGlobals
 
 
@@ -10,13 +10,17 @@ WEIGHT_FN_SUFFIX = "x"  # specify the suffix for the weight function string
 # create the string representation for the weight function
 WEIGHT_FN_STR = WPGlobals.WEIGHT_FUNCTION_PREFIX + WEIGHT_FN_SUFFIX
 
-ncaab_evcalculator = \
-    EVCalculator(
-        sport_name=NCAABGlobals.SPORT_NAME,
+EPSILON = 50  # specify the epsilon value
+
+EV_THRESHOLD = 0  # specify the EV threshold value
+
+ncaaf_betting_machine = \
+    BettingMachine(
+        sport_name=NCAAFGlobals.SPORT_NAME,
         time_period=TIME_PERIOD,
         weight_fn_str=WEIGHT_FN_STR,
         verbose=True
-    )  # initialize the ncaab ev calculator
+    )  # initialize the ncaaf betting machine
 
-# compute the expected values of all teams for all games using the ncaab ev calculator
-ncaab_evcalculator.compute_ev()
+# run the betting algorithm
+ncaaf_betting_machine.run(EPSILON, EV_THRESHOLD)

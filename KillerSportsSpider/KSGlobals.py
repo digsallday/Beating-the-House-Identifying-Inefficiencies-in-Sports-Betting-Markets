@@ -1,6 +1,6 @@
 class KSGlobals:
     """
-    Class containing global variables for the KSGlobals package
+    Class containing global variables for the KillerSportsSpider package
     """
 
     # global list of casino names

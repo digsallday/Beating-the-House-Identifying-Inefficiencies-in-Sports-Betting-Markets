@@ -39,7 +39,7 @@ class EVCalculator:
                     EVGlobals.EV_CSV_SUFFIX,
                     "(" + ", ".join(list([str(self.get_time_period()), self.get_weight_fn_str()])) + ").csv"
                 ])
-            )  # specify the ev cav filename
+            )  # specify the ev csv filename
 
         ev_csv = list([EVGlobals.EV_CSV_HEADER, list()])  # initialize the matrix for the ev csv
 

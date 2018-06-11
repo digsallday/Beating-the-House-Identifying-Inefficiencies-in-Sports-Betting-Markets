@@ -5,7 +5,7 @@ from WinPercentageCalculator import WPGlobals
 
 TIME_PERIOD = "Aggregate"  # specify the time period
 
-WEIGHT_FN_SUFFIX = "x"  #
+WEIGHT_FN_SUFFIX = "x"  # specify the suffix for the weight function string
 
 # create the string representation for the weight function
 WEIGHT_FN_STR = WPGlobals.WEIGHT_FUNCTION_PREFIX + WEIGHT_FN_SUFFIX
