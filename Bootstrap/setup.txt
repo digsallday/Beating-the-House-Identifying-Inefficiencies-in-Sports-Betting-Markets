@@ -1,0 +1,6 @@
+(1) Install python 3: sudo yum install python34
+(2) Download setup script for pip: curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+(3) Install pip: python3 get-pip.py --user
+(4) Install numpy: python3 -m pip install numpy --user
+(5) Copy scripts to remote machine: scp -i bootstrap.pem ~/Downloads/Bootstrap/* ec2-user@public-dns-address:~
+(6) Run script in background: nohup python3 ./parameter_estimation.py > out.log &
